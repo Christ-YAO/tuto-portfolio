@@ -4,7 +4,8 @@ import { GeistMono } from "geist/font/mono";
 import { Anek_Telugu } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import './index.css'
+import "./index.css";
+import { Providers } from "./Providers";
 
 const AnekTelugu = Anek_Telugu({
   subsets: ["latin"],
@@ -31,7 +32,7 @@ export default function RootLayout({
           "h-full font-sans"
         )}
       >
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
