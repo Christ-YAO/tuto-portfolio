@@ -20,7 +20,7 @@ export default function CalCom() {
         alt="showcase"
         width={400}
         height={200}
-        className="w-full h-auto mt-6 lg:mt-8"
+        className="w-full h-auto mt-6 lg:mt-8 border border-accent rounded"
       />
       <h3 className="text-[14px] font-light text-center my-6 text-neutral-600">
         Call with yao | <Link href="https://cal.com/melvynx" className="hover:underline hover:text-white transition-all underline-offset-2 font-semibold">Cal.com</Link>

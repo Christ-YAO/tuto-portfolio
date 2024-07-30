@@ -4,8 +4,8 @@ import Section from "./Section";
 
 export default function Footer() {
   return (
-    <Section className="border-t flex flex-col gap-4 border-accent max-w-full">
-        <p className="mx-auto pt-6 lg:pt-12 text-xs text-neutral-600">
+    <Section className="border-t flex flex-col gap-4 border-accent max-w-full h-0 max-h-[0px]">
+        <p className="mx-auto pt-6 lg:pt-12 pb-0 text-xs text-neutral-600">
           Made with ❤️ by <Link
           href={"/"}
           className=" group hover:text-[#60a5fa66] transition-all"
@@ -15,7 +15,7 @@ export default function Footer() {
           </Code>
         </Link> 
         </p>
-        <p className="mx-auto text-[13px] -mb-6 lg:-mb-[70px] font-extralight">© {new Date().getFullYear()} <Code className="italic">yao</Code>. All rights reserved.</p>
+        <p className="mx-auto text-[13px] font-extralight">© {new Date().getFullYear()} <Code className="italic">yao</Code>. All rights reserved.</p>
     </Section>
   );
 }

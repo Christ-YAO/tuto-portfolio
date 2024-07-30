@@ -27,7 +27,7 @@ export default function Showcase() {
         alt="showcase"
         width={400}
         height={200}
-        className="w-full h-auto mt-6 lg:mt-8"
+        className="w-full h-auto mt-6 lg:mt-8 border border-accent rounded"
       />
     </Section>
   );

@@ -7,7 +7,7 @@ import Work from "./_components/Work";
 
 export default function Home() {
   return (
-    <main className="h-full text-base">
+    <main className="h-full text-base relative">
       <Nav />
       <Hero />
       <Work />
