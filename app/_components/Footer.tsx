@@ -4,8 +4,8 @@ import Section from "./Section";
 
 export default function Footer() {
   return (
-    <Section className="border-t flex flex-col gap-4 border-accent max-w-full h-0 max-h-[0px]">
-        <p className="mx-auto pt-6 lg:pt-12 pb-0 text-xs text-neutral-600">
+    <Section className="border-t flex flex-col gap-4 border-accent max-w-full md:my-16 lg:my-16">
+        <p className="mx-auto pt-10 sm:pt-12 pb-0 text-xs text-neutral-600">
           Made with ❤️ by <Link
           href={"/"}
           className=" group hover:text-[#60a5fa66] transition-all"
