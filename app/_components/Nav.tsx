@@ -20,7 +20,7 @@ export const Nav = () => {
         "top-0 py-6 backdrop-blur-3xl z-50 fixed w-full overflow-hidden transition-all px-4 xl:px-0"
       )}
     >
-      <div className="flex justify-between items-baseline max-w-6xl m-auto relative">
+      <div className="flex justify-between items-baseline max-w-3xl m-auto relative">
         <div
           className={cn(
             "relative transition-all duration-500",
@@ -30,38 +30,39 @@ export const Nav = () => {
           <Link
             href={"/"}
             className={cn(
-              "text-xl group dark:font-medium relative transition-all duration-500"
+              "text-xl group font-semibold dark:font-medium relative transition-all duration-500"
             )}
           >
-            T
+            C
             <span
               className={cn(
                 "absolute opacity-0 group-hover:relative group-hover:opacity-100 transition-all duration-300 ease-in-out",
                 scrollDir === Direction.Down && "relative opacity-100"
               )}
             >
-              héo
+              hrist
             </span>{" "}
             <span
               className={cn(
-                "absolute left-3 group-hover:left-[56px] transition-all duration-300 ease-in-out",
-                scrollDir === Direction.Down && "left-[56px]"
+                "absolute left-[11px] group-hover:left-[71px] transition-all duration-300 ease-in-out",
+                scrollDir === Direction.Down && "left-[71px]"
               )}
             >
-              D
+              y
             </span>
             <span
               className={cn(
                 "absolute opacity-0 group-hover:relative group-hover:opacity-100 transition-all duration-300 ease-in-out ml-5",
-                scrollDir === Direction.Down && "relative opacity-100 ml-[20px]"
+                scrollDir === Direction.Down &&
+                  "relative opacity-100 ml-[17.5px] dark:ml-[20px]"
               )}
             >
-              iame
+              ao
             </span>
             <span
               className={cn(
-                "absolute left-7 group-hover:left-[120px] transition-all dura delay-150 ease-in-out",
-                scrollDir === Direction.Down && "left-[120px]"
+                "absolute left-5 group-hover:left-[105px] transition-all dura delay-150 ease-in-out",
+                scrollDir === Direction.Down && "left-[105px]"
               )}
             >
               .
@@ -74,11 +75,11 @@ export const Nav = () => {
             scrollDir === Direction.Down && "absolute right-0 -top-10 opacity-0"
           )}
         >
-          <div className="flex items-center gap-2 text-primary dark:dark:text-neutral-300 text-[14px]">
+          <div className="flex items-center gap-2 text-primary dark:dark:text-neutral-300 text-[13.5px]">
             <a
               href={"/#services"}
               className={clsx(
-                "py-2 px-4 transition font-medium hover:bg-accent rounded",
+                "p-2 transition font-medium hover:bg-accent rounded",
                 {
                   "font-extrabold bg-accent/50": pathname === "/#services",
                 }
@@ -89,7 +90,7 @@ export const Nav = () => {
             <a
               href={"/#about"}
               className={clsx(
-                "py-2 px-4 transition font-medium hover:bg-accent rounded mr-10",
+                "p-2 transition font-medium hover:bg-accent rounded mr-4",
                 {
                   "font-extrabold bg-accent/50": pathname === "/#about",
                 }
@@ -97,13 +98,7 @@ export const Nav = () => {
             >
               <span className="font-mono">1.</span> A Propos
             </a>
-            <a
-              href={"/#contact"}
-              className="cursor-pointer font-medium rounded-4xl bg-[#2c99b7] text-white hover:brightness-90 hover:bg-[#2c99b7] transition-all px-4 py-2"
-            >
-              Prendre contact
-            </a>
-            {/* <ThemeToggle /> */}
+            <ThemeToggle />
           </div>
         </div>
       </div>
