@@ -30,7 +30,7 @@ export const Nav = () => {
           <Link
             href={"/"}
             className={cn(
-              "text-xl group font-semibold dark:font-medium relative transition-all duration-500"
+              "text-xl group font-[700] dark:font-medium relative transition-all duration-500"
             )}
           >
             C
@@ -48,20 +48,20 @@ export const Nav = () => {
                 scrollDir === Direction.Down && "left-[71px]"
               )}
             >
-              y
+              yao
             </span>
             <span
               className={cn(
-                "absolute opacity-0 group-hover:relative group-hover:opacity-100 transition-all duration-300 ease-in-out ml-5",
+                "absolute opacity-0 group-hover:relative group-hover:opacity-100 transition-all duration-300 ease-in-out ml-[17px] dark:ml-5",
                 scrollDir === Direction.Down &&
-                  "relative opacity-100 ml-[17.5px] dark:ml-[20px]"
+                  "relative opacity-100 ml-[17px] dark:ml-[20px]"
               )}
             >
               ao
             </span>
             <span
               className={cn(
-                "absolute left-5 group-hover:left-[105px] transition-all dura delay-150 ease-in-out",
+                "absolute left-[46px] group-hover:left-[106px]  dark:group-hover:left-[105px] transition-all dura delay-150 ease-in-out",
                 scrollDir === Direction.Down && "left-[105px]"
               )}
             >
